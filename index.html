@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saint-Shiba</title>
+    <link href="./dist/output.css" rel="stylesheet">
+    <link rel="icon" href="./dist/img/svg/iconDog.svg">
+</head>
+
+<body>
+    <header
+        class="bg-herobgImg bg-no-repeat h-full max-lg:bg-cover max-lg:h-auto w-full bg-cover bg-center max-lg:bg-left">
+        <nav class="bg-[#000000bf] py-[23px] max-sm:py-3 ">
+            <div class="max-w-[1320px] mx-auto px-3">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center justify-between w-full">
+                        <h2
+                            class="font-normal cursor-pointer text-4xl max-sm:text-[25px] leading-[54px] max-md:leading-[30px] text-white font-poppins">
+                            Saint<span class="text-[#F06500] font-bold">Shiba</span>
+                        </h2>
+                        <div
+                            class="flex flex-col lg:flex-row items-center gap-8 max-sm:gap-5 max-lg:fixed max-lg:justify-center top-0 max-lg:-left-full max-lg:z-[90] max-lg:h-screen max-lg:w-full max-lg:duration-300 max-lg:backdrop-blur-[50px] openNav">
+                            <a onclick="navWorking()"
+                                class="font-normal text-lg font-poppins leading-[32px] text-white relative after:absolute after:bg-[#f06500] after:h-[2px] after:w-0 hover:after:w-full hover:after:rounded-[10px] after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:duration-300 after:ease-linear"
+                                href="#home">Home</a>
+                            <a onclick="navWorking()"
+                                class="font-normal text-lg font-poppins leading-[32px] text-white relative after:absolute after:bg-[#f06500] after:h-[2px] after:w-0 hover:after:w-full hover:after:rounded-[10px] after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:duration-300 after:ease-linear"
+                                href="#">About Us</a>
+                            <a onclick="navWorking()"
+                                class="font-normal text-lg font-poppins leading-[32px] text-white relative after:absolute after:bg-[#f06500] after:h-[2px] after:w-0 hover:after:w-full hover:after:rounded-[10px] after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:duration-300 after:ease-linear"
+                                href="#Tokenomics">Tokenomics</a>
+                            <a onclick="navWorking()"
+                                class="font-normal text-lg font-poppins leading-[32px] text-white relative after:absolute after:bg-[#f06500] after:h-[2px] after:w-0 hover:after:w-full hover:after:rounded-[10px] after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:duration-300 after:ease-linear"
+                                href="#buy">How
+                                to buy</a>
+                            <a onclick="navWorking()"
+                                class="font-normal text-lg font-poppins leading-[32px] text-white relative after:absolute after:bg-[#f06500] after:h-[2px] after:w-0 hover:after:w-full hover:after:rounded-[10px] after:left-1/2 after:-translate-x-1/2 after:bottom-0 after:duration-300 after:ease-linear"
+                                href="#faq">FAQ</a>
+
+
+                            <a class="font-semibold max-xl:font-medium text-lg font-poppins leading-[32px] text-white ml-[6px] px-[23px] py-[7px] rounded-[23px] bg-[linear-gradient(70.26deg,#FFA800,#F06500)] hover:text-[#F06500] 
+                            hover:bg-[linear-gradient(70.26deg,#FFffff,#ffffff)] duration-300 ease-linear"
+                                href="#">Connect Wallet</a>
+                        </div>
+                    </div>
+                    <!-- menu btn -->
+                    <div class="menu relative z-[100] lg:hidden" onclick="closeNav()">
+                        <span class="w-10 h-1 rounded-xl bg-[#F06500] block duration-300 menuItem1"></span>
+                        <span class="my-2 w-10 h-1 rounded-xl bg-[#F06500] block duration-300 menuItem2"></span>
+                        <span class="w-10 h-1 rounded-xl bg-[#F06500] block duration-300 menuItem3"></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- hero section -->
+        <section id="home"
+            class="pt-[60px] max-2xl:pt-[90px] max-xl:pt-[80px] max-sm:pt-[50px] max-lg:pt-[70px] overflow-hidden">
+            <!-- container -->
+            <div class="max-w-[1320px] mx-auto px-3">
+                <!-- row -->
+                <div class="flex flex-row flex-wrap -mx-3 items-center">
+                    <!-- column-1 -->
+                    <div class="px-3 w-full 2xl:w-1/2 max-2xl:lg:w-[58.33%] text-cen ter">
+                        <h1
+                            class="font-bold max-2xl:font-semibold text-[96px] max-sm:text-[43px] max-md:text-[50px] max-lg:text-[52px] max-xl:text-[73px] leading-[95px] max-md:leading-[42px] max-lg:leading-[60px] max-xl:leading-[74px] max-2xl:leading-[90px]  text-white font-poppins">
+                            Accumsan ut orci vitae</span>
+                        </h1>
+                        <p
+                            class="font-normal text-[22px] max-sm:text-base max-md:text-xl max-xl:text-[19px] leading-[33px] max-sm:leading-6 max-md:leading-[31px] max-xl:leading-[30px] text-white font-poppins mt-6 max-sm:mt-3 mb-[50px] max-sm:mb-5 max-md:mb-8 lg:mb-[30px] max-lg:max-w-[900px] max-2xl:max-w-[700px] w-full lg:w-full">
+                            Velit
+                            eget sit nibh fringilla risus ullamcorper malesuada. Morbi nulla suscipit
+                            dolor, volutpat quam at urna donec rutrum. In vulputate congue arcu in et.</p>
+                        <button class="font-semibold max-xl:font-medium text-[25px] max-sm:text-base font-poppins leading-[33px] text-white px-8 py-3 rounded-[32px] bg-[linear-gradient(90deg,#FFA800,#F06500)] hover:text-[#F06500] 
+                             hover:bg-[linear-gradient(70.26deg,#FFffff,#ffffff)] duration-500 ease-linear">Connect
+                            Wallet
+                        </button>
+                    </div>
+                    <!-- column-2 -->
+                    <div
+                        class="px-3 w-full 2xl:w-1/2 max-2xl:lg:w-[41.66%] max-sm:mt-[50px] max-md:mt-[60px]  max-lg:mt-[70px]">
+                        <div class="flex lg:justify-end justify-center">
+                            <img src="./dist/img/png/hero-image.png"
+                                class="w-full max-sm:max-w-[240px] max-md:max-w-[300px] max-lg:max-w-[350px] max-xl:max-w-[370px] 2xl:max-w-[565px] 2xl:h-[841px] max-sm:h-auto"
+                                alt="hero-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- translate box -->
+    <section class="bg-[#0C0B0B] -mt-[2px]">
+        <div class="max-w-[1320px] mx-auto px-3">
+            <div
+                class="border border-solid rounded-[10px] backdrop-blur-lg bg-gradient-to-tr from-[#FFFFFF0D] via-[#FFFFFF00] -translate-y-[35%] max-sm:-translate-y-[7%] max-md:-translate-y-[11%] max-lg:-translate-y-[12%] max-xl:-translate-y-[14%] max-2xl:-translate-y-[30%] relative z-50">
+                <div class="p-6 max-sm:p-3 rounded-[10px] bg-transparent">
+                    <h1
+                        class="font-semibold max-md:font-medium text-5xl max-sm:text-[24px] max-md:text-[42px] max-lg:text-[39px] max-xl:text-[40px] font-poppins leading-[61px] max-md:leading-[48px] max-sm:leading-[30px] max-lg:leading-[56px] max-xl:leading-[51px] text-white mb-6 max-sm:mb-3 max-md:mb-5 max-lg:mb-[15px]">
+                        Cursus ligula habitant sed integer.</h1>
+                    <p
+                        class="font-normal text-lg max-sm:text-[15px] leading-8 max-sm:leading-6 max-md:leading-[31px] text-white font-poppins opacity-[70%]">
+                        Urna, dictum volutpat
+                        augue tortor.
+                        Fermentum vulputate convallis viverra facilisis. Aliquam
+                        porttitor sem rhoncus rhoncus, quis. Arcu, ut enim eget pellentesque neque.
+                        Nibh pellentesque lobortis etiam sed. Cursus donec porttitor fames
+                        tellus. At ut donec nec aliquet ipsum leo tellus amet lacus. Varius mi urna blandit id magna
+                        tellus
+                        imperdiet tortor. Volutpat nec vulputate diam tristique facilisi in turpis vel elit.</p>
+                    <p
+                        class="font-normal text-lg max-sm:text-[15px] leading-8 max-sm:leading-6 max-md:leading-[31px] text-white font-poppins opacity-[70%] mt-4 max-sm:mt-3">
+                        Urna, dictum volutpat augue tortor. Fermentum vulputate convallis viverra facilisis. Aliquam
+                        porttitor sem rhoncus rhoncus, quis. Arcu, ut enim eget pellentesque neque.
+                        Nibh pellentesque lobortis etiam sed. Cursus donec porttitor fames
+                        tellus. At ut donec nec aliquet ipsum leo tellus amet lacus. Varius mi urna blandit id magna
+                        tellus imperdiet tortor. Volutpat nec vulputate diam tristique facilisi in turpis vel elit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Cursus ligula -->
+    <section
+        class="bg-[#0C0B0B] relative z-10 -mt-[70px] max-sm:-mt-[1px] max-md:-mt-5 max-lg:-mt-[3px] max-xl:-mt-[1px] ">
+        <!-- position image -->
+        <img src="./dist/img/png/leftLine.png" class="absolute left-0 bottom-0 max-md:hidden -z-10 translate-y-1/4"
+            alt="position-image">
+        <img src="./dist/img/png/rightLine.png" class="absolute right-0 top-0 -z-10 -translate-y-[27%]"
+            alt="position-image">
+        <img src="./dist/img/png/Ellipse1.png" class="absolute -z-10 2xl:left-[44%] max-xl:top-[42%] -top-1/4"
+            alt="Ellipse">
+        <img src="./dist/img/png/Ellipse2.png" class="absolute -z-10 right-[5%] -bottom-1/4" alt="ellipse">
+        <!-- container -->
+        <div class="max-w-[1320px] mx-auto px-3">
+            <!-- row -->
+            <div class="flex flex-row flex-wrap -mx-3 items-center">
+                <!-- column -->
+                <div class="px-3 w-full lg:w-[58.33%]">
+                    <h1
+                        class="font-semibold max-md:font-medium text-5xl max-sm:text-[24px] max-md:text-[42px] max-lg:text-[39px] max-xl:text-[40px] font-poppins leading-[61px] max-sm:leading-[30px] max-md:leading-[48px] max-lg:leading-[48px] max-xl:leading-[51px] text-white mb-6 max-sm:mb-3 max-md:mb-5 max-lg:mb-3">
+                        Cursus ligula
+                        habitant sed integer.</h1>
+                    <p
+                        class="font-normal text-lg max-sm:text-[15px] leading-8 max-sm:leading-6 max-md:leading-[31px] font-poppins text-white opacity-[70%] w-full max-w-[660px] max-lg:max-w-full">
+                        Urna, dictum volutpat augue tortor. Fermentum vulputate convallis viverra
+                        facilisis. Aliquam porttitor sem rhoncus rhoncus, quis. Arcu, ut enim eget pellentesque
+                        neque. Nibh pellentesque lobortis etiam sed. Cursus donec porttitor fames tellus.
+                    </p>
+                    <button class="font-semibold max-xl:font-medium text-lg font-poppins leading-[32px] text-white mt-8 max-sm:mt-5 max-xl:mt-[30px] px-[23px] py-[7px] rounded-[23px] bg-[linear-gradient(70.26deg,#FFA800,#F06500)] hover:text-[#F06500] 
+                            hover:bg-[linear-gradient(70.26deg,#FFffff,#ffffff)] duration-500 ease-linear"> Learn more
+                    </button>
+                </div>
+                <!-- column -->
+                <div class="px-3 w-full lg:w-[41.66%] max-sm:mt-[50px] max-md:mt-[60px] max-lg:mt-[70px]">
+                    <div class="flex justify-center">
+                        <img src="./dist/img/png/Cursus-image.png"
+                            class="w-full max-sm:max-w-[240px] max-md:max-w-[300px] max-lg:max-w-[350px] max-xl:max-w-[370px] 2xl:max-w-[551px] 2xl:h-[722px] max-sm:h-auto"
+                            alt="Cursus-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- how to buy -->
+    <section id="buy"
+        class="bg-[#1D1A1A] relative z-10 -mt-[1px] py-[89px] max-2xl:py-[90px] max-xl:py-[80px] max-sm:py-[50px] max-md:py-[60px] max-lg:py-[70px]">
+        <div class=" relative">
+            <!-- container -->
+            <div class="max-w-[1320px] mx-auto px-3">
+                <!-- row -->
+                <div class="flex flex-row flex-wrap -mx-3 items-center">
+                    <!-- column -->
+                    <div class="px-3 max-xl:w-full xl:w-1/2">
+                        <h1
+                            class="font-semibold max-md:font-medium text-5xl max-sm:text-[24px] max-md:text-[42px] max-lg:text-[39px] max-xl:text-[40px] font-poppins leading-[61px] max-sm:leading-[30px] max-md:leading-[31px] max-lg:leading-[48px] max-xl:leading-[51px] text-white  mb-6 max-sm:mb-3 max-md:mb-5 max-lg:mb-[12px]">
+                            How to Buy</h1>
+                        <p
+                            class="font-normal text-lg max-sm:text-[15px] leading-8 max-sm:leading-6 max-md:leading-[31px] font-poppins text-white opacity-[70%] w-full xl:max-w-[660px] max-lg:max-w-full">
+                            Urna, dictum volutpat
+                            augue tortor. Fermentum vulputate convallis viverra facilisis. Aliquam porttitor sem rhoncus
+                            rhoncus, quis. Arcu, ut enim eget pellentesque neque. Nibh pellentesque lobortis etiam sed.
+                            Cursus donec porttitor fames tellus.
+                        </p>
+                        <div class="mt-12 max-sm:mt-[50px] flex flex-col gap-4 max-sm:gap-3">
+                            <div
+                                class="p-3 cursor-pointer max-sm:py-2 max-sm:px-2 bg-[#151313] rounded-[46px] flex items-center gap-[23px] max-sm:gap-4 group/circle hover:bg-[#0C0B0B] duration-300 ease-linear">
+                                <div
+                                    class="flex flex-col items-center justify-center max-sm:scale-90 bg-white h-[71px] min-w-[71px] rounded-[50%] group-hover/circle:bg-[linear-gradient(70.26deg,#FFA800,#F06500)] duration-300 ease-linear">
+                                    <h3
+                                        class=" text-black font-semibold text-[22px] font-poppins leading-[33px] group-hover/circle:text-white duration-300 ease-linear">
+                                        1
+                                    </h3>
+                                </div>
+                                <div>
+                                    <h2
+                                        class="font-semibold text-[22px] max-sm:text-[17px] leading-[33px] max-sm:leading-6 text-white font-poppins">
+                                        Cras nunc libero ac
+                                    </h2>
+                                    <h3
+                                        class="font-normal text-lg max-sm:text-[15px] leading-8 max-sm:leading-5 max-md:leading-[31px] font-poppins text-white opacity-[70%] w-full max-w-[660px] max-lg:max-w-full">
+                                        Amet, integer et ultrices non viverra dolor dui
+                                    </h3>
+                                </div>
+                            </div>
+                            <div
+                                class="p-3 cursor-pointer max-sm:py-2 max-sm:px-2 bg-[#151313] rounded-[46px] flex items-center gap-[23px] max-sm:gap-4 group/circle hover:bg-[#0C0B0B] duration-300 ease-linear">
+                                <div
+                                    class="flex flex-col items-center justify-center max-sm:scale-90 bg-white h-[71px] min-w-[71px] rounded-[50%] group-hover/circle:bg-[linear-gradient(70.26deg,#FFA800,#F06500)] duration-300 ease-linear">
+                                    <h3
+                                        class=" text-black font-semibold text-[22px] font-poppins leading-[33px] group-hover/circle:text-white duration-300 ease-linear">
+                                        2
+                                    </h3>
+                                </div>
+                                <div>
+                                    <h2
+                                        class="font-semibold text-[22px] max-sm:text-[17px] leading-[33px] max-sm:leading-6 text-white font-poppins">
+                                        Cras nunc libero ac
+                                    </h2>
+                                    <h3
+                                        class="font-normal text-lg max-sm:text-[15px] leading-8 max-sm:leading-5 max-md:leading-[31px] font-poppins text-white opacity-[70%] w-full max-w-[660px] max-lg:max-w-full">
+                                        Amet, integer et ultrices non viverra dolor dui
+                                    </h3>
+                                </div>
+                            </div>
+                            <div
+                                class="p-3 cursor-pointer max-sm:py-2 max-sm:px-2 bg-[#151313] rounded-[46px] flex items-center gap-[23px] max-sm:gap-4 group/circle hover:bg-[#0C0B0B] duration-300 ease-linear">
+                                <div
+                                    class="flex flex-col items-center justify-center max-sm:scale-90 bg-white h-[71px] min-w-[71px] w-[71px] rounded-[50%] group-hover/circle:bg-[linear-gradient(70.26deg,#FFA800,#F06500)] duration-300 ease-linear">
+                                    <h3
+                                        class=" text-black font-semibold text-[22px] font-poppins leading-[33px] group-hover/circle:text-white duration-300 ease-linear">
+                                        3
+                                    </h3>
+                                </div>
+                                <div>
+                                    <h2
+                                        class="font-semibold text-[22px] max-sm:text-[17px] leading-[33px] max-sm:leading-6 text-white font-poppins">
+                                        Cras nunc libero ac
+                                    </h2>
+                                    <h3
+                                        class="font-normal text-lg max-sm:text-[15px] leading-8 max-sm:leading-5 max-md:leading-[31px] font-poppins text-white opacity-[70%] w-full max-w-[660px] max-lg:max-w-full">
+                                        Amet, integer et ultrices non viverra dolor dui
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- column2 -->
+                    <div
+                        class="px-3 max-xl:w-full xl:w-1/2 max-sm:mt-[50px] max-md:mt-[60px]  max-lg:mt-[70px] max-xl:mt-[80px]">
+                        <div class="">
+                            <img src="./dist/img/png/Buyimg.png"
+                                class="xl:absolute xl:right-0 xl:top-1/2 xl:w-[48%] xl:-translate-y-1/2 w-full"
+                                alt="Buy-data">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- tokenomics and road map -->
+    <section class="relative z-10 bg-[#0C0B0B] overflow-hidden -mt-[1px]">
+        <!-- position image -->
+        <img src="./dist/img/png/roadPosition1.png" class="absolute left-0 bottom-0 max-md:max-w-[70%] -z-10"
+            alt="Roadmap-Position">
+        <img src="./dist/img/png/roadPosition2.png"
+            class="absolute max-w-[400px] right-0 top-[48%] max-md:w-1/2 max-md:top-[73%] -z-10" alt="Roadmap-Position">
+        <!-- Tokenomics -->
+        <div id="Tokenomics"
+            class="py-[60px] -mt-[1px] max-2xl:py-[90px] max-xl:py-[80px] max-lg:py-[70px] max-sm:py-[50px] ">
+            <!-- container -->
+            <div class="max-w-[1320px] mx-auto px-3">
+                <h1
+                    class="font-semibold text-center max-md:font-medium text-5xl max-sm:text-[24px] max-md:text-[42px] max-lg:text-[39px] max-xl:text-[40px] font-poppins leading-[61px] max-sm:leading-[30px] max-md:leading-[31px] max-lg:leading-[56px] max-xl:leading-[51px] text-white mb-8 max-lg:mb-6">
+                    Tokenomics</h1>
+                <!-- row -->
+                <div class="flex flex-row flex-wrap -mx-3 items-center">
+                    <!-- column1 -->
+                    <div class="px-3 w-full sm:w-1/2 lg:w-1/3">
+                        <div class="border cursor-pointer border-solid border-[#3A3939] rounded-[10px]">
+                            <div class="pt-4 pb-[22px] px-5 bg_grayGradient1 rounded-[10px]">
+                                <h3
+                                    class="font-normal text-[22px] max-sm:text-xl leading-[33px] text-white font-poppins">
+                                    Liquidity</h3>
+                                <!--  -->
+                                <div
+                                    class="mt-4 flex sm:gap-[45px] md:gap-[70px] 2xl:gap-[106px]  max-sm:justify-between items-center">
+                                    <div>
+                                        <h3
+                                            class="font-normal text-sm max-2xl:text-base leading-[25px] font-poppins text-white opacity-[70%]">
+                                            When Buying
+                                        </h3>
+                                        <h2
+                                            class="font-semibold max-md:font-medium text-[28px] max-md:text-[22px] max-sm:text-[19px] leading-[42px] max-sm:leading-9 font-poppins text-white hover:text-[#F06500] cursor-pointer ease-linear duration-300">
+                                            3-5%</h2>
+                                    </div>
+                                    <div>
+                                        <h3
+                                            class="font-normal text-sm max-2xl:text-base leading-[25px] font-poppins text-white opacity-[70%]">
+                                            When Selling
+                                        </h3>
+                                        <h2
+                                            class="font-semibold max-md:font-medium text-[28px] max-md:text-[22px] max-sm:text-[19px] leading-[42px] max-sm:leading-9 font-poppins text-white hover:text-[#F06500] cursor-pointer ease-linear duration-300">
+                                            3-5%</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- column2 -->
+                    <div class="px-3 w-full sm:w-1/2 lg:w-1/3 max-sm:mt-6">
+                        <div class="border cursor-pointer border-solid border-[#3A3939] rounded-[10px]">
+                            <div class="pt-4 pb-[22px] px-5  bg_grayGradient1 rounded-[10px]">
+                                <h3 class="font-normal text-[22px] leading-[33px] text-white font-poppins">Marketing
+                                </h3>
+                                <div
+                                    class="mt-4 flex sm:gap-[45px] md:gap-[70px] 2xl:gap-[106px]  max-sm:justify-between items-center">
+                                    <div>
+                                        <h3
+                                            class="font-normal text-sm max-2xl:text-base leading-[25px] font-poppins text-white opacity-[70%]">
+                                            When Buying
+                                        </h3>
+                                        <h2
+                                            class="font-semibold max-md:font-medium text-[28px] max-md:text-[22px] max-sm:text-[19px] leading-[42px] max-sm:leading-9 font-poppins text-white hover:text-[#F06500] cursor-pointer ease-linear duration-300">
+                                            3-5%</h2>
+                                    </div>
+                                    <div>
+                                        <h3
+                                            class="font-normal text-sm max-2xl:text-base  leading-[25px] font-poppins text-white opacity-[70%]">
+                                            When Selling
+                                        </h3>
+                                        <h2
+                                            class="font-semibold max-md:font-medium text-[28px] max-md:text-[22px] max-sm:text-[19px] leading-[42px] max-sm:leading-9 font-poppins text-white hover:text-[#F06500] cursor-pointer ease-linear duration-300">
+                                            3-5%</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- column3 -->
+                    <div class="px-3 w-full sm:w-1/2 lg:w-1/3 max-lg:mt-6">
+                        <div class="border cursor-pointer border-solid border-[#3A3939] rounded-[10px]">
+                            <div class="pt-4 pb-[22px] px-5  bg_grayGradient1 rounded-[10px]">
+                                <h3 class="font-normal text-[22px] leading-[33px] text-white font-poppins">Rewards</h3>
+                                <div
+                                    class="mt-4 flex sm:gap-[45px] md:gap-[70px] 2xl:gap-[106px] max-sm:justify-between items-center">
+                                    <div>
+                                        <h3
+                                            class="font-normal text-sm  max-2xl:text-base leading-[25px] font-poppins text-white opacity-[70%]">
+                                            When Buying
+                                        </h3>
+                                        <h2
+                                            class="font-semibold max-md:font-medium text-[28px] max-md:text-[22px] max-sm:text-[19px] leading-[42px] max-sm:leading-9 font-poppins text-white hover:text-[#F06500] cursor-pointer ease-linear duration-300">
+                                            3-5%</h2>
+                                    </div>
+                                    <div>
+                                        <h3
+                                            class="font-normal text-sm max-2xl:text-base leading-[25px] font-poppins text-white opacity-[70%]">
+                                            When Selling
+                                        </h3>
+                                        <h2
+                                            class="font-semibold max-md:font-medium text-[28px] max-md:text-[22px] max-sm:text-[19px] leading-[42px] max-sm:leading-9 font-poppins text-white hover:text-[#F06500] cursor-pointer ease-linear duration-300">
+                                            3-5%</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Circle Data -->
+                <div
+                    class="border-x-[1px] border-solid border-t-[1px] border-b-0 border-[#474646] mt-[22px] rounded-t-[10px]">
+                    <div
+                        class="bg_grayGradient rounded-t-[10px] pt-[66px] pl-[66px] pr-[97px] pb-[70px] max-lg:p-[66px] max-md:px-5">
+                        <!-- row -->
+                        <div class="flex flex-row flex-wrap -mx-3 justify-between">
+                            <!-- column -->
+                            <div class="px-3 w-full lg:w-1/3">
+                                <div class="flex justify-center">
+                                    <img src="./dist/img/png/circle-data.png" class="w-full max-lg:w-[365px]"
+                                        alt="data-in-circle">
+                                </div>
+                            </div>
+                            <!-- column -->
+                            <div class="px-3 w-full lg:w-[58.33%] max-lg:mt-[70px] max-md:mt-[60px] max-sm:mt-[50px]">
+                                <!-- row -->
+                                <div class="flex flex-row flex-wrap -mx-3 items-center">
+                                    <!-- column -->
+                                    <div class="px-3 w-full sm:w-1/2 ">
+                                        <div class="flex max-sm:justify-center">
+                                            <div class="flex flex-col gap-[15px] max-sm:max-w-[300px]">
+                                                <div class="flex items-center gap-[25px]">
+                                                    <div
+                                                        class="bg-[#00E396] w-[50px] max-xl:max-w-[41px] max-lg:max-w-[50px] h-[50px] max-xl:h-[41px] max-lg:h-[50px] rounded max-sm:max-w-[41px] max-sm:h-[41px]">
+                                                    </div>
+                                                    <h4
+                                                        class="font-semibold max-md:font-medium text-[18px] max-sm:text-base leading-8 font-poppins text-white">
+                                                        Sed
+                                                        sem
+                                                    </h4>
+                                                </div>
+                                                <div class="flex items-center gap-[25px]">
+                                                    <div
+                                                        class="bg-[#F06500] w-[50px] max-xl:max-w-[41px] max-lg:max-w-[50px] h-[50px] max-xl:h-[41px] max-lg:h-[50px] rounded max-sm:max-w-[41px] max-sm:h-[41px]">
+                                                    </div>
+                                                    <h4
+                                                        class="font-semibold max-md:font-medium text-[18px] max-sm:text-base leading-8 font-poppins text-white">
+                                                        Sed
+                                                        sem
+                                                    </h4>
+                                                </div>
+                                                <div class="flex items-center gap-[25px]">
+                                                    <div
+                                                        class="bg-[#8B35E2] w-[50px] max-xl:max-w-[41px] max-lg:max-w-[50px] h-[50px] max-xl:h-[41px] max-lg:h-[50px] rounded max-sm:max-w-[41px] max-sm:h-[41px]">
+                                                    </div>
+                                                    <h4
+                                                        class="font-semibold max-md:font-medium text-[18px] max-sm:text-base leading-8 font-poppins text-white">
+                                                        Sed
+                                                        sem
+                                                    </h4>
+                                                </div>
+                                                <div class="flex items-center gap-[25px]">
+                                                    <div
+                                                        class="bg-[#00B2FF] w-[50px] max-xl:max-w-[41px] max-lg:max-w-[50px] h-[50px] max-xl:h-[41px] max-lg:h-[50px] rounded max-sm:max-w-[41px] max-sm:h-[41px]">
+                                                    </div>
+                                                    <h4
+                                                        class="font-semibold max-md:font-medium text-[18px] max-sm:text-base leading-8 font-poppins text-white">
+                                                        Sed
+                                                        sem
+                                                    </h4>
+                                                </div>
+                                                <div class="flex items-center gap-[25px]">
+                                                    <div
+                                                        class="bg-[#FFA800] w-[50px] max-xl:max-w-[41px] max-lg:max-w-[50px] h-[50px] max-xl:h-[41px] max-lg:h-[50px] rounded max-sm:max-w-[41px] max-sm:h-[41px]">
+                                                    </div>
+                                                    <h4
+                                                        class="font-semibold max-md:font-medium text-[18px] max-sm:text-base leading-8 font-poppins text-white">
+                                                        Sed
+                                                        sem
+                                                    </h4>
+                                                </div>
+                                                <div class="flex items-center gap-[25px]">
+                                                    <div
+                                                        class="bg-[#FF4560] w-[50px] max-xl:max-w-[41px] max-lg:max-w-[50px] h-[50px] max-xl:h-[41px] max-lg:h-[50px] rounded max-sm:max-w-[41px] max-sm:h-[41px]">
+                                                    </div>
+                                                    <h4
+                                                        class="font-semibold max-md:font-medium text-[18px] max-sm:text-base leading-8 font-poppins text-white">
+                                                        Sed
+                                                        sem
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- column -->
+                                    <div class="px-3 w-full sm:w-1/2 max-sm:mt-[50px] ">
+                                        <div class="max-sm:flex max-sm:justify-center">
+                                            <img src="./dist/img/png/TokenomicsImg.png"
+                                                class="w-full max-sm:max-w-[240px]" alt="Tokenomics-img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- table -->
+                <div class="max-lg:overflow-auto max-lg:scrolbar pb-[10px] text-nowrap ">
+                    <table class="w-full bg_grayGradient !border-spacing-0 border-separate rounded-[10px]">
+                        <thead class="bg-[#0C0C0C] w-full">
+                            <tr>
+                                <th class="pt-[14px] pb-[22px] whitespace-nowrap "></th>
+                                <th
+                                    class="pt-[14px] pb-[22px] whitespace-nowrap font-semibold font-poppins text-lg leading-8 text-center text-white">
+                                    Token
+                                </th>
+                                <th
+                                    class="pt-[14px] pb-[22px] whitespace-nowrap font-semibold font-poppins text-lg leading-8 text-center text-white">
+                                    Percentage
+                                </th>
+                                <th
+                                    class="pt-[14px] pb-[22px] whitespace-nowrap font-semibold font-poppins text-lg leading-8 text-center text-white">
+                                    Token Price
+                                </th>
+                                <th
+                                    class="pt-[14px] pb-[22px] whitespace-nowrap font-semibold font-poppins text-lg leading-8 text-center text-white">
+                                    Token Price
+                                </th>
+                                <th
+                                    class="pt-[14px] pb-[22px] whitespace-nowrap font-semibold font-poppins text-lg leading-8 text-center text-white">
+                                    Total Amount
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="w-full">
+                            <tr>
+                                <td
+                                    class="pt-[17px] font-normal text-lg leading-8 font-poppins text-white text-center whitespace-nowrap">
+                                    Seddigq</td>
+                                <td
+                                    class="pt-[17px] font-normal text-lg leading-8 font-poppins text-white text-center whitespace-nowrap opacity-[70%]">
+                                    1,00,000</td>
+                                <td
+                                    class="pt-[17px] font-normal text-lg leading-8 font-poppins text-white text-center whitespace-nowrap opacity-[70%]">
+                                    12%</td>
+                                <td
+                                    class="pt-[17px] font-normal text-lg leading-8 font-poppins text-white text-center whitespace-nowrap opacity-[70%]">
+                                    58.3</td>
+                                <td
+                                    class="pt-[17px] font-normal text-lg leading-8 font-poppins text-white text-center whitespace-nowrap opacity-[70%]">
+                                    12%</td>
+                                <td
+                                    class="pt-[17px] font-normal text-lg leading-8 font-poppins text-white text-center whitespace-nowrap opacity-[70%]">
+                                    10% Monthly</td>
+                            </tr>
+                            <tr>
+                                <td
+                                    class="pt-[28px] font-normal text-lg leading-8 font-poppins text-white text-center whitespace-nowrap">
+                                    Seddigq</td>
+                                <td
+                                    class="pt-[28px] font-normal text-lg leading-8 font-poppins text-white text-center whitespace-nowrap opacity-[70%]">
+                                    1,00,000</td>
+                                <td
+                                    class="pt-[28px] font-normal text-lg leading-8 font-poppins text-white text-center whitespace-nowrap opacity-[70%]">
+                                    12%</td>
+                                <td
+                                    class="pt-[28px] font-normal text-lg leading-8 font-poppins text-white text-center whitespace-nowrap opacity-[70%]">
+                                    58.3</td>
+                                <td
+                                    class="pt-[28px] font-normal text-lg leading-8 font-poppins text-white text-center whitespace-nowrap opacity-[70%]">
+                                    12%</td>
+                                <td
+                                    class="pt-[28px] font-normal text-lg leading-8 font-poppins text-white text-center whitespace-nowrap opacity-[70%]">
+                                    10% Monthly</td>
+                            </tr>
+                            <tr>
+                                <td
+                                    class="pt-[28px] font-normal text-lg leading-8 font-poppins text-white text-center whitespace-nowrap">
+                                    Seddigq</td>
+                                <td
+                                    class="pt-[28px] font-normal text-lg leading-8 font-poppins text-white text-center whitespace-nowrap opacity-[70%]">
+                                    1,00,000</td>
+                                <td
+                                    class="pt-[28px] font-normal text-lg leading-8 font-poppins text-white text-center whitespace-nowrap opacity-[70%]">
+                                    12%</td>
+                                <td
+                                    class="pt-[28px] font-normal text-lg leading-8 font-poppins text-white text-center whitespace-nowrap opacity-[70%]">
+                                    58.3</td>
+                                <td
+                                    class="pt-[28px] font-normal text-lg leading-8 font-poppins text-white text-center whitespace-nowrap opacity-[70%]">
+                                    12%</td>
+                                <td
+                                    class="pt-[28px] font-normal text-lg leading-8 font-poppins text-white text-center whitespace-nowrap opacity-[70%]">
+                                    10% Monthly</td>
+                            </tr>
+                            <tr>
+                                <td
+                                    class="pt-[28px] font-normal text-lg leading-8 font-poppins text-white text-center whitespace-nowrap">
+                                    Seddigq</td>
+                                <td
+                                    class="pt-[28px] font-normal text-lg leading-8 font-poppins text-white text-center whitespace-nowrap opacity-[70%]">
+                                    1,00,000</td>
+                                <td
+                                    class="pt-[28px] font-normal text-lg leading-8 font-poppins text-white text-center whitespace-nowrap opacity-[70%]">
+                                    12%</td>
+                                <td
+                                    class="pt-[28px] font-normal text-lg leading-8 font-poppins text-white text-center whitespace-nowrap opacity-[70%]">
+                                    58.3</td>
+                                <td
+                                    class="pt-[28px] font-normal text-lg leading-8 font-poppins text-white text-center whitespace-nowrap opacity-[70%]">
+                                    12%</td>
+                                <td
+                                    class="pt-[28px] font-normal text-lg leading-8 font-poppins text-white text-center whitespace-nowrap opacity-[70%]">
+                                    10% Monthly</td>
+                            </tr>
+                            <tr>
+                                <td
+                                    class="pt-[28px] font-normal text-lg leading-8 font-poppins text-white text-center whitespace-nowrap">
+                                    Seddigq</td>
+                                <td
+                                    class="pt-[28px] font-normal text-lg leading-8 font-poppins text-white text-center whitespace-nowrap opacity-[70%]">
+                                    1,00,000</td>
+                                <td
+                                    class="pt-[28px] font-normal text-lg leading-8 font-poppins text-white text-center whitespace-nowrap opacity-[70%]">
+                                    12%</td>
+                                <td
+                                    class="pt-[28px] font-normal text-lg leading-8 font-poppins text-white text-center whitespace-nowrap opacity-[70%]">
+                                    58.3</td>
+                                <td
+                                    class="pt-[28px] font-normal text-lg leading-8 font-poppins text-white text-center whitespace-nowrap opacity-[70%]">
+                                    12%</td>
+                                <td
+                                    class="pt-[28px] font-normal text-lg leading-8 font-poppins text-white text-center whitespace-nowrap opacity-[70%]">
+                                    10% Monthly</td>
+                            </tr>
+                            <tr>
+                                <td
+                                    class="pt-[28px] font-normal text-lg leading-8 font-poppins text-white text-center whitespace-nowrap">
+                                    Seddigq</td>
+                                <td
+                                    class="pt-[28px] font-normal text-lg leading-8 font-poppins text-white text-center whitespace-nowrap opacity-[70%]">
+                                    1,00,000</td>
+                                <td
+                                    class="pt-[28px] font-normal text-lg leading-8 font-poppins text-white text-center whitespace-nowrap opacity-[70%]">
+                                    12%</td>
+                                <td
+                                    class="pt-[28px] font-normal text-lg leading-8 font-poppins text-white text-center whitespace-nowrap opacity-[70%]">
+                                    58.3</td>
+                                <td
+                                    class="pt-[28px] font-normal text-lg leading-8 font-poppins text-white text-center whitespace-nowrap opacity-[70%]">
+                                    12%</td>
+                                <td
+                                    class="pt-[28px] font-normal text-lg leading-8 font-poppins text-white text-center whitespace-nowrap opacity-[70%]">
+                                    10% Monthly</td>
+                            </tr>
+                            <tr class="border-spacing-0">
+                                <td
+                                    class="pb-8 pt-[28px] border-spacing-0 font-normal text-lg leading-8 font-poppins text-white text-center whitespace-nowrap ">
+                                    Seddigq</td>
+                                <td
+                                    class="pt-[28px] pb-8 font-normal text-lg leading-8 font-poppins text-white text-center whitespace-nowrap opacity-[70%]">
+                                    1,00,000</td>
+                                <td
+                                    class="pt-[28px] pb-8 font-normal text-lg leading-8 font-poppins text-white text-center whitespace-nowrap opacity-[70%]">
+                                    12%</td>
+                                <td
+                                    class="pt-[28px] pb-8 font-normal text-lg leading-8 font-poppins text-white text-center whitespace-nowrap opacity-[70%]">
+                                    58.3</td>
+                                <td
+                                    class="pt-[28px] pb-8 font-normal text-lg leading-8 font-poppins text-white text-center whitespace-nowrap opacity-[70%]">
+                                    12%</td>
+                                <td
+                                    class="pt-[28px] pb-8 font-normal text-lg leading-8 font-poppins text-white text-center whitespace-nowrap opacity-[70%]">
+                                    10% Monthly</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!-- Roadmap -->
+        <div class="pb-[73px] -mt-[1px] max-2xl:pb-[90px] max-xl:pb-[80px] max-lg:pb-[70px] max-sm:pb-[50px] ">
+            <!-- container -->
+            <div class="max-w-[1320px] mx-auto px-3">
+                <h2
+                    class="font-semibold text-center max-md:font-medium text-5xl max-sm:text-[24px] max-md:text-[42px] max-lg:text-[39px] max-xl:text-[40px] font-poppins leading-[61px] max-sm:leading-[30px] max-md:leading-[31px] max-lg:leading-[56px] max-xl:leading-[51px] text-white">
+                    Roadmap</h2>
+                <div
+                    class="mt-[60px] max-sm:mt-[50px] max-lg:mt-[70px] max-xl:mt-[80px] max-2xl:mt-[90px] w-full max-md:max-w-[450px] mx-auto relative after:absolute after:top-[1%] after:bottom-[22%] after:w-[5px]
+                             after:left-1/2 max-md:after:left-0 max-sm:after:left-[10px] after:translate-x-1/2 after:bg-white">
+                    <!-- box1 -->
+                    <div
+                        class="w-full md:w-1/2 relative left-0 pb-3 lg:pr-[110px] max-lg:pr-[70px] max-md:pr-0 max-md:pl-[70px] max-sm:pl-[55px] after:absolute after:top-0 after:-end-[23px] max-md:after:-left-[13px] max-sm:after:left-[1px] after:z-10 after:w-9 after:h-9 after:rounded-[50%] max-sm:after:w-7 max-sm:after:h-7 after:bg-[linear-gradient(70.26deg,#FFA800,#F06500)]">
+                        <h2
+                            class="font-semibold text-4xl max-sm:text-xl max-lg:text-[32px] leading-[54px] max-lg:leading-[42px] max-sm:leading-6 text-end max-md:text-start text-white">
+                            Phase-1
+                        </h2>
+                        <p
+                            class="font-normal text-lg max-sm:text-[15px] leading-8 max-sm:leading-6 max-md:leading-[31px] font-poppins text-white opacity-[70%] text-end max-md:text-start mt-2">
+                            Massa pellentesque sagittis
+                            <span class="block max-md:inline">Aliquamsed in odio.</span>
+                            <span class="block max-md:inline">Turpis blandit at interdum</span>
+                            Eget tempus nulla tempus arcu.
+                        </p>
+                    </div>
+                    <!-- box2 -->
+                    <div
+                        class="w-full md:w-1/2 relative left-1/2 max-md:left-0  pb-3 pl-[110px] max-lg:pl-[70px] max-sm:pl-[55px] after:absolute after:top-0 after:-left-[13px] max-sm:after:left-[1px] after:z-10 after:w-9 after:h-9 after:rounded-[50%] max-sm:after:w-7 max-sm:after:h-7 after:bg-[linear-gradient(70.26deg,#FFA800,#F06500)]">
+                        <h2
+                            class="font-semibold text-4xl max-sm:text-xl max-lg:text-[32px] leading-[54px] max-lg:leading-[42px] max-sm:leading-6 text-start text-white">
+                            Phase-2</h2>
+                        <p
+                            class="font-normal text-lg max-sm:text-[15px] leading-8 max-sm:leading-6 max-md:leading-[31px] font-poppins text-white opacity-[70%] text-start mt-2">
+                            Massa pellentesque sagittis
+                            <span class="block max-md:inline">Aliquamsed in odio.</span>
+                            <span class="block max-md:inline">Turpis blandit at interdum</span>
+                            Eget tempus nulla tempus arcu.
+                        </p>
+                    </div>
+                    <!-- box3 -->
+                    <div
+                        class="w-full md:w-1/2 relative left-0 pb-3 lg:pr-[110px] max-lg:pr-[70px] max-md:pr-0 max-md:pl-[70px] max-sm:pl-[55px] after:absolute after:top-0 after:-end-[23px] max-md:after:-left-[13px] max-sm:after:left-[1px] after:z-10 after:w-9 after:h-9 after:rounded-[50%] max-sm:after:w-7 max-sm:after:h-7 after:bg-[linear-gradient(70.26deg,#FFA800,#F06500)]">
+                        <h2
+                            class="font-semibold text-4xl max-sm:text-xl max-lg:text-[32px] leading-[54px] max-lg:leading-[42px] max-sm:leading-6 text-end max-md:text-start text-white">
+                            Phase-3
+                        </h2>
+                        <p
+                            class="font-normal text-lg max-sm:text-[15px] leading-8 max-sm:leading-6 max-md:leading-[31px] font-poppins text-white opacity-[70%] text-end max-md:text-start mt-2">
+                            Massa pellentesque sagittis
+                            <span class="block max-md:inline">Aliquamsed in odio.</span>
+                            <span class="block max-md:inline">Turpis blandit at interdum</span>
+                            Eget tempus nulla tempus arcu.
+                        </p>
+                    </div>
+                    <!-- box4 -->
+                    <div
+                        class="w-full md:w-1/2 relative left-1/2 max-md:left-0  pb-3 pl-[110px] max-lg:pl-[70px] max-sm:pl-[55px] after:absolute after:top-0 after:-left-[13px] max-sm:after:left-[1px] after:z-10 after:w-9 after:h-9 after:rounded-[50%] max-sm:after:w-7 max-sm:after:h-7 after:bg-[linear-gradient(70.26deg,#FFA800,#F06500)]">
+                        <h2
+                            class="font-semibold text-4xl max-sm:text-xl max-lg:text-[32px] leading-[54px] max-lg:leading-[42px] max-sm:leading-6 text-start text-white">
+                            Phase-4</h2>
+                        <p
+                            class="font-normal text-lg max-sm:text-[15px] leading-8 max-sm:leading-6 max-md:leading-[31px] font-poppins text-white opacity-[70%] text-start mt-2">
+                            Massa pellentesque sagittis
+                            <span class="block max-md:inline">Aliquamsed in odio.</span>
+                            <span class="block max-md:inline">Turpis blandit at interdum</span>
+                            Eget tempus nulla tempus arcu.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- faq -->
+    <footer id="faq"
+        class="pb-[456px] relative z-10 bg-[#0C0B0B] -mt-[2px] max-2xl:pb-[90px] max-xl:pb-[80px] max-lg:pb-[70px] max-md:pb-[60px] max-sm:pb-[50px]">
+        <!-- container -->
+        <div class="max-w-[1320px] mx-auto px-3">
+            <h2
+                class="font-semibold text-center max-md:font-medium text-5xl max-sm:text-[24px] max-md:text-[42px] max-lg:text-[39px] max-xl:text-[40px] font-poppins leading-[61px] max-sm:leading-[30px] max-md:leading-[31px] max-lg:leading-[56px] max-xl:leading-[51px] text-white">
+                FAQ
+            </h2>
+            <!-- accordian -->
+            <div class="mt-8">
+                <div class="" id="accordion-collapse" data-accordion="collapse">
+                    <!-- box1 -->
+                    <div class="!mb-2 border-[#474646] border rounded-[10px] bg_grayGradient">
+                        <h2 id="accordion-collapse-heading-5">
+                            <button type="button"
+                                class="flex items-center downArrow text-[22px] max-sm:text-[16px] font-semibold max-xl:font-medium font-poppins bg-transparent justify-between w-full p-4 leading-[33px] max-sm:leading-6 rtl:text-right text-white !duration-300 !ease-linear"
+                                data-accordion-target="#accordion-collapse-body-5" aria-expanded="false"
+                                aria-controls="accordion-collapse-body-5">
+                                <span class="text-start">Volutpat consequat dictumst vel donec.</span>
+                                <svg class="arrow" width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.293 0.292969L5.99997 4.58597L1.70697 0.292969L0.292969 1.70697L5.99997 7.41397L11.707 1.70697L10.293 0.292969Z"
+                                        fill="white" />
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-collapse-body-5" class="hidden !duration-300 !ease-linear"
+                            aria-labelledby="accordion-collapse-heading-5">
+                            <div class="p-4 max-sm:pt-0 bg-transparent ">
+                                <p
+                                    class="font-normal text-lg max-sm:text-[15px] leading-8 max-sm:leading-6 max-md:leading-[31px] font-poppins text-white opacity-[70%]">
+                                    Amet
+                                    vitae hendrerit
+                                    facilisi gravida. Nascetur sed luctus sit elit in mi orci. Aliquet ullamcorper quis
+                                    felis at
+                                    scelerisque non faucibus. Amet vitae hendrerit facilisi gravida. Nascetur sed luctus
+                                    sit elit in mi orci. Aliquet
+                                    ullamcorper quis felis at scelerisque non faucibus.Amet vitae hendrerit facilisi
+                                    gravida. Nascetur sed luctus sit elit
+                                    in mi orci. Aliquet ullamcorper quis felis at scelerisque non faucibus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- box2 -->
+                    <div class="!mb-2 border border-[#474646] rounded-[10px] bg_grayGradient">
+                        <h2 id="accordion-collapse-heading-1">
+                            <button type="button"
+                                class="flex bg-transparent items-center text-[22px] max-sm:text-[16px] font-semibold max-xl:font-medium font-poppins justify-between w-full p-4 leading-[33px] max-sm:leading-6 rtl:text-right text-white !duration-300 !ease-linear"
+                                data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
+                                aria-controls="accordion-collapse-body-1">
+                                <span class="text-start">Volutpat consequat dictumst vel donec.</span>
+                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.70703 7.70703L6.00003 3.41403L10.293 7.70703L11.707 6.29303L6.00003 0.586032L0.293031 6.29303L1.70703 7.70703Z"
+                                        fill="white" />
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-collapse-body-1" class="hidden !duration-300 !ease-linear"
+                            aria-labelledby="accordion-collapse-heading-1">
+                            <div class="p-4 max-sm:pt-0 bg-transparent">
+                                <p
+                                    class="font-normal text-lg max-sm:text-[15px] leading-8 max-sm:leading-6 max-md:leading-[31px] font-poppins text-white opacity-[70%]">
+                                    Amet
+                                    vitae hendrerit
+                                    facilisi gravida. Nascetur sed luctus sit elit in mi orci. Aliquet ullamcorper quis
+                                    felis at
+                                    scelerisque non faucibus. Amet vitae hendrerit facilisi gravida. Nascetur sed luctus
+                                    sit elit in mi orci. Aliquet
+                                    ullamcorper quis felis at scelerisque non faucibus.Amet vitae hendrerit facilisi
+                                    gravida. Nascetur sed luctus sit elit
+                                    in mi orci. Aliquet ullamcorper quis felis at scelerisque non faucibus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- box3 -->
+                    <div class="!mb-2 border border-[#474646] rounded-[10px] bg_grayGradient">
+                        <h2 id="accordion-collapse-heading-2">
+                            <button type="button"
+                                class="flex items-center downArrow text-[22px] max-sm:text-[16px] font-semibold max-xl:font-medium font-poppins bg-transparent justify-between w-full p-4 leading-[33px] max-sm:leading-6 rtl:text-right text-white !duration-300 !ease-linear"
+                                data-accordion-target="#accordion-collapse-body-2" aria-expanded="false"
+                                aria-controls="accordion-collapse-body-2">
+                                <span class="text-start">Volutpat consequat dictumst vel donec.</span>
+                                <svg class="arrow" width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.293 0.292969L5.99997 4.58597L1.70697 0.292969L0.292969 1.70697L5.99997 7.41397L11.707 1.70697L10.293 0.292969Z"
+                                        fill="white" />
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-collapse-body-2" class="hidden !duration-300 !ease-linear"
+                            aria-labelledby="accordion-collapse-heading-2">
+                            <div class="p-4 max-sm:pt-0 bg-transparent">
+                                <p
+                                    class="font-normal text-lg max-sm:text-[15px] leading-8 max-sm:leading-6 max-md:leading-[31px] font-poppins text-white opacity-[70%]">
+                                    Amet
+                                    vitae hendrerit facilisi gravida. Nascetur sed luctus sit elit in mi orci. Aliquet
+                                    ullamcorper quis
+                                    felis at scelerisque non faucibus. Amet vitae hendrerit facilisi gravida. Nascetur
+                                    sed luctus
+                                    sit elit in mi orci. Aliquet ullamcorper quis felis at scelerisque non faucibus.Amet
+                                    vitae hendrerit facilisi gravida. Nascetur sed luctus sit elit
+                                    in mi orci. Aliquet ullamcorper quis felis at scelerisque non faucibus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- box4 -->
+                    <div class="!mb-2 border border-[#474646] rounded-[10px] bg_grayGradient">
+                        <h2 id="accordion-collapse-heading-3">
+                            <button type="button"
+                                class="flex items-center downArrow text-[22px] max-sm:text-[16px] font-semibold max-xl:font-medium font-poppins bg-transparent justify-between w-full p-4 leading-[33px] max-sm:leading-6 rtl:text-right text-white !duration-300 !ease-linear"
+                                data-accordion-target="#accordion-collapse-body-3" aria-expanded="false"
+                                aria-controls="accordion-collapse-body-3">
+                                <span class="text-start">Volutpat consequat dictumst vel donec.</span>
+                                <svg class="arrow" width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.293 0.292969L5.99997 4.58597L1.70697 0.292969L0.292969 1.70697L5.99997 7.41397L11.707 1.70697L10.293 0.292969Z"
+                                        fill="white" />
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-collapse-body-3" class="hidden !duration-300 !ease-linear"
+                            aria-labelledby="accordion-collapse-heading-3">
+                            <div class="p-4 max-sm:pt-0 bg-transparent">
+                                <p
+                                    class="font-normal text-lg max-sm:text-[15px] leading-8 max-sm:leading-6 max-md:leading-[31px] font-poppins text-white opacity-[70%]">
+                                    Amet
+                                    vitae hendrerit
+                                    facilisi gravida. Nascetur sed luctus sit elit in mi orci. Aliquet ullamcorper quis
+                                    felis at
+                                    scelerisque non faucibus. Amet vitae hendrerit facilisi gravida. Nascetur sed luctus
+                                    sit elit in mi orci. Aliquet
+                                    ullamcorper quis felis at scelerisque non faucibus.Amet vitae hendrerit facilisi
+                                    gravida. Nascetur sed luctus sit elit
+                                    in mi orci. Aliquet ullamcorper quis felis at scelerisque non faucibus.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- box5 -->
+                    <div class="border-[#474646] border rounded-[10px] bg_grayGradient">
+                        <h2 id="accordion-collapse-heading-4">
+                            <button type="button"
+                                class="flex items-center downArrow text-[22px] max-sm:text-[16px] font-semibold max-xl:font-medium font-poppins bg-transparent justify-between w-full p-4 leading-[33px] max-sm:leading-6 rtl:text-right text-white !duration-300 !ease-linear"
+                                data-accordion-target="#accordion-collapse-body-4" aria-expanded="false"
+                                aria-controls="accordion-collapse-body-4">
+                                <span class="text-start">Volutpat consequat dictumst vel donec.</span>
+                                <svg class="arrow" width="12" height="8" viewBox="0 0 12 8" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.293 0.292969L5.99997 4.58597L1.70697 0.292969L0.292969 1.70697L5.99997 7.41397L11.707 1.70697L10.293 0.292969Z"
+                                        fill="white" />
+                                </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-collapse-body-4" class="hidden"
+                            aria-labelledby="accordion-collapse-heading-4">
+                            <div class="p-4 max-sm:pt-0 bg-transparent">
+                                <p
+                                    class="font-normal text-lg max-sm:text-[15px] leading-8 max-sm:leading-6 max-md:leading-[31px] font-poppins text-white opacity-[70%]">
+                                    Amet
+                                    vitae hendrerit
+                                    facilisi gravida. Nascetur sed luctus sit elit in mi orci. Aliquet ullamcorper quis
+                                    felis at
+                                    scelerisque non faucibus. Amet vitae hendrerit facilisi gravida. Nascetur sed luctus
+                                    sit elit in mi orci. Aliquet
+                                    ullamcorper quis felis at scelerisque non faucibus.Amet vitae hendrerit facilisi
+                                    gravida. Nascetur sed luctus sit elit
+                                    in mi orci. Aliquet ullamcorper quis felis at scelerisque non faucibus.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- position img -->
+        <img src="./dist/img/png/footerPosition.png" class="absolute bottom-0 right-0 -z-10" alt="footerPosition">
+        <!-- back to top -->
+        <div id="myBtn" onclick="topFunction()"
+            class="fixed z-50 cursor-pointer hidden right-[12%] bottom-[1%] opacity-70 max-2xl:right-3 rounded-[50%]  bg-[linear-gradient(70.26deg,#FFA800,#F06500)] h-[50px] w-[50px] items-center justify-center">
+            <svg class="scale-[0.6]" width="34" height="34" viewBox="0 0 34 34" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.0835 17.0007V33.6673H14.9168V17.0007H0.333496L17.0002 0.333984L33.6668 17.0007H19.0835Z"
+                    fill="white" />
+            </svg>
+
+        </div>
+    </footer>
+
+    <script src="./dist/app.js"></script>
+    <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+</body>
+
+</html>
