@@ -16,8 +16,16 @@ function closeNav() {
 }
 
 function navWorking() {
-  document.querySelector("body").classList.remove("overflow-hidden");
-  document.querySelector(".openNav").classList.toggle("!left-0");
+  if (window.innerWidth < 1024) {
+    document.querySelector("body").classList.remove("overflow-hidden");
+    document.querySelector(".openNav").classList.toggle("!left-0");
+    menu1.classList.toggle("rotate-45");
+    menu1.classList.toggle("translate-y-[13px]");
+    menu2.classList.toggle("translate-x-[-100%]");
+    menu2.classList.toggle("opacity-0");
+    menu3.classList.toggle("rotate-[-48deg]");
+    menu3.classList.toggle("translate-y-[-10px]");
+  }
 }
 
 // back to top button //
@@ -42,8 +50,6 @@ let arrow = document.querySelectorAll(".arrow");
 // downArrow.addEventListener("click", () => {
 //   document.querySelectorAll(".arrow").classList.toggle("rotate-180");
 // });
-
-console.log(downArrow);
 
 downArrow.forEach((el, i) => {
   el.addEventListener("click", () => {
